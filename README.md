@@ -7,6 +7,6 @@ A simple todo List made with redux
 - to make it a bit more comprehensive
 
 ## Resources
-- [Redux toolKit]("https://redux-toolkit.js.org/")
+- [Redux toolKit](https://redux-toolkit.js.org/)
 - [React Router](https://github.com/remix-run/react-router)
 
