@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import { useAppSelector, useAppDispatch } from './app/hooks';
 import {
   decrement,
   increment,
-  incrementByAmount,
   incrementAsync,
   incrementIfOdd,
   selectCount,
-} from './counterSlice';
-import styles from './Counter.module.css';
+} from './app/counterReducer';
+import styles from './styles/Counter.module.css';
 
-export function Counter() {
+export default function Counter() {
   const count = useAppSelector(selectCount);
-  const dispatch = useAppDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
+    const dispatch = useAppDispatch();// it dispatches an action but this is set at the global level
+    const [incrementAmount, setIncrementAmount] = useState('2');
+    // State that holds the current increment value
 
   const incrementValue = Number(incrementAmount) || 0;
 
@@ -44,12 +44,12 @@ export function Counter() {
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
-        <button
+        {/* <button
           className={styles.button}
           onClick={() => dispatch(incrementByAmount(incrementValue))}
         >
           Add Amount
-        </button>
+        </button> */}
         <button
           className={styles.asyncButton}
           onClick={() => dispatch(incrementAsync(incrementValue))}

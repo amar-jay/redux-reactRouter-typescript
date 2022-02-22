@@ -1,0 +1,35 @@
+.Home {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    color: black;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;    
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 500ms;
+}
+
+.title:hover {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.nav > * > * {
+    text-decoration: none;
+    color: rgb(0, 95, 95);
+
+}

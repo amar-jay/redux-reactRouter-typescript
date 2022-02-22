@@ -1,0 +1,86 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+form > * {
+    font-size: 16;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+form > *:not(:last-child) :hover {
+    border-bottom: 2px solid #ccc;
+}
+
+form > h1 {
+    color: blueviolet;
+    text-decoration: dotted;
+}
+
+form > input {
+    width: 18rem;
+    height: 1rem;
+}
+
+form > button {
+    padding: .5rem 3rem;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+.todos > li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: .25rem .5rem;
+    margin: 2rem 0;
+    background-color: violet;
+    border-radius: .25rem;
+}
+
+.todos > li > button {
+    background-color: blueviolet;
+    border-width: 0;
+    border-radius: .25rem;
+    padding: .5rem;
+    margin: .5rem 0 0 0;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 500ms;
+}
+
+.todos > li > button:hover {
+    background-color: darkorchid;
+}
+
+.todos > li > p {
+    font-weight: 600;
+    font-size: 24px;
+    color: blueviolet;
+    margin: 0;
+    cursor: pointer;
+}
+
+.todos > li > span {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+}
+
+.completed {
+    text-decoration: solid line-through black 3px;
+    color: #ccc;
+}
+
+.notcompleted {
+    text-decoration: none;
+}
+
+
